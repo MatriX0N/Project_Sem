@@ -19,7 +19,7 @@
     <string name="login_two_dot">Логін:</string>
     <string name="password__">Пароль</string>
     <string name="vhid">Вхід</string>
-    <string name="dovid">Довідник</string>
+    <string name="cars">Машини</string>
     <string name="exit">Вийти</string>
     <string name="menegment">Менеджмент</string>
     <string name="change">Змінити</string>
@@ -34,7 +34,7 @@
     <string name="cancel_">Cancel</string>
     <string name="add_manager">Додати</string>
     <string name="close">Повернутись</string>
-    <string name="size">Площа</string>
-    <string name="month">Місяць саджання</string>
-    <string name="name_of_seed">Назва насіння</string>
+    <string name="size">Кінець роботи</string>
+    <string name="month">Початок роботи</string>
+    <string name="name_of_seed">Назва</string>
 </resources>

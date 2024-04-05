@@ -26,6 +26,12 @@
             android:name=".MainActivity"
             android:exported="false" />
         <activity
+            android:name=".CarsManagerActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CarsInfoActivity"
+            android:exported="false" />
+        <activity
             android:name=".RegistrationActivity"
             android:exported="false"
             android:requestLegacyExternalStorage="true" />

@@ -51,16 +51,16 @@ class MainActivity : AppCompatActivity() {
             finish()
         }
 
-//        buttonInfo.setOnClickListener{
-//            val intent = Intent(this, SeedsInfoActivity::class.java)
-//            startActivity(intent)
-//        }
-//
-//        buttonManager.setOnClickListener{
-//            val intent = Intent(this, SeedsManagerActivity::class.java)
-//            startActivity(intent)
-//        }
-//
+        buttonInfo.setOnClickListener{
+            val intent = Intent(this, CarsInfoActivity::class.java)
+            startActivity(intent)
+        }
+
+        buttonManager.setOnClickListener{
+            val intent = Intent(this, CarsManagerActivity::class.java)
+            startActivity(intent)
+        }
+
         IVProfile.setOnClickListener{
             val intent = Intent(this, ProfileActivity::class.java)
             startActivity(intent)

@@ -62,10 +62,7 @@ class ProfileActivity : AppCompatActivity() {
             val year = calendar.get(Calendar.YEAR)
             val month = calendar.get(Calendar.MONTH)
             val day = calendar.get(Calendar.DAY_OF_MONTH)
-
             val datePickerDialog = DatePickerDialog(this, null, year, month, day)
-
-
             datePickerDialog.datePicker.maxDate = calendar.timeInMillis
 
             datePickerDialog.setOnDateSetListener { _, selectedYear, selectedMonth, selectedDay ->
@@ -82,8 +79,6 @@ class ProfileActivity : AppCompatActivity() {
         }
         IV.setOnClickListener {
             selectImage()
-            //editor.putString("Image", I)
-            //editor.apply()
         }
 
         et_name.setText(sharedPreferences.getString(Const.NAME, ""))
@@ -201,7 +196,6 @@ class ProfileActivity : AppCompatActivity() {
 
         return file.absolutePath
     }
-
     @Deprecated("Deprecated in Java")
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
         super.onActivityResult(requestCode, resultCode, data)

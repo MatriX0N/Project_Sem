@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/backgroundConstraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/seedNameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/plantingTimeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/seedNameTextView" />
+
+    <TextView
+        android:id="@+id/plotSizeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/plantingTimeTextView" />
+
+    <ImageView
+        android:id="@+id/updateImageView"
+        android:layout_width="28dp"
+        android:layout_height="44dp"
+        android:src="@drawable/edit"
+        app:layout_constraintTop_toTopOf="@id/deleteImageView"
+        app:layout_constraintStart_toEndOf="@id/deleteImageView"
+        android:layout_marginStart="16dp"/>
+
+    <ImageView
+        android:id="@+id/deleteImageView"
+        android:layout_width="33dp"
+        android:layout_height="50dp"
+        android:src="@drawable/cart"
+        app:layout_constraintTop_toBottomOf="@id/plotSizeTextView"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="16dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
